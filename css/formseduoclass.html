@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formseudoclass</title>
+    <style>
+        #t1:focus{
+            outline: none;
+            border: 1px solid red;
+        }
+        input[type="checkbox"]:checked{
+            box-shadow: 2px 3px 4px 5px red;
+        }
+        input[type="text"]:enabled{
+            background-color: aquamarine;
+        }
+        input[type="text"]:disabled{
+            background-color:blue;
+        }
+        input[type="text"]:required{
+            background-color:yellowgreen;
+        }
+        input[type="text"]:valid{
+            
+            background-color:sienna;
+        }
+        input[type="text"]:invalid{
+            background-color:tomato;
+        }
+        option:default{
+            color:tomato;
+        }
+    
+    
+    
+    
+    
+    
+    </style>
+
+</head>
+<body>
+    <span>focus</span><br>
+    <input type="text" name="focus" id="t1"><br>
+    <span>checkbox:</span>
+    <label for="football">football</label>
+    <input type="checkbox" name="football" id="football">
+    <label for="basketball">basketball</label>
+    <input type="checkbox" name="basketball" id="basketball"><br>
+    <span>focus</span><br>
+    <input type="text" name="focus" id="t1" disabled><br>
+    <span>focus</span><br>
+    <input type="text" name="focus" id="t1" required><br>
+    <span>focus</span><br>
+    <input type="text" name="focus" id="t1"><br>
+    <span>valid:invalid</span><br>
+    <input type="text" placeholder="enter the name" pattern="[a-z]*"><br>
+    <select>
+        <option value="html">html</option>
+        <option value="css">css</option>
+        <option value="js" selected>js</option>
+    </select>
+
+
+   
+
+    
+</body>
+</html>

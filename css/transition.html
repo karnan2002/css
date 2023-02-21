@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>transition</title>
+    <style>
+    div{
+        height: 400px;
+        width: 400px;
+        background-color: violet;
+        transition-property:all;
+        transition-duration:0.5s;
+        transition-delay: 0.5s;
+        transition-timing-function: ease-in-out;
+        border: 5px solid red; 
+    }
+    div:hover{
+        height:600px;
+        width:600px;
+        background-color:aqua;
+        border: 7px double green; 
+    }
+    h1{
+        color:blue ;
+        font-size: 20px;
+        transition-property: all;
+        transition-duration: 0.5s;
+        transition-delay: 1s;
+        transition-timing-function: ease-in-out;
+    }
+    h1:hover{
+        color: red;
+        font-size:50px;
+    }
+    
+    </style>
+</head>
+<body>
+    <h1>transition</h1>
+    <div></div>
+    
+</body>
+</html>
